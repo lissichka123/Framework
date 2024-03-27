@@ -1,6 +1,10 @@
+import lombok.Getter;
+
 public class Player {
     protected int id;
+    @Getter
     protected String name;
+    @Getter
     protected int strength;
 
     public Player(int id, String name, int strength) {
@@ -9,11 +13,4 @@ public class Player {
         this.strength = strength;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
 }
